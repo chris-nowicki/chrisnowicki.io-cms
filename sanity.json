@@ -1,7 +1,7 @@
 {
   "root": true,
   "project": {
-    "name": "cdn-portfolio",
+    "name": "cdn-portfolio"
   },
   "api": {
     "projectId": "4zd5l3k5",
