@@ -203,6 +203,9 @@ dist/
 .output/
 
 ### Sanity
-sanity/
+/dist
+/.sanity
+/coverage
+/.pnp
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,node
