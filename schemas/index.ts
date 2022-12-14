@@ -1,6 +1,18 @@
-import siteSettings from './siteSettings'
+
 import tech from './tech'
 import projects from './projects'
-import featuredProjects from './featuredProjects'
 
-export const schemaTypes = [siteSettings, tech, projects, featuredProjects]
+
+// Singleton document type
+import settings from './singletons/ settings'
+
+const singletons = [settings]
+
+// Object types
+import linkExternal from './objects/linkExternal'
+import linkInternal from './objects/linkInternal'
+
+const objects = [linkExternal, linkInternal]
+
+
+export const schemaTypes = [...singletons, ...objects, tech, projects]

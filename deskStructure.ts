@@ -1,15 +1,18 @@
 export const myStructure = (S: any) =>
     S.list()
-        .title('Portfolio CMS')
+        .title('Data')
         .items([
             S.listItem()
-                .title('Site Settings')
+                .title('Settings')
                 .child(
                     S.document()
-                        .schemaType('siteSettings')
-                        .documentId('siteSettings')
+                        .schemaType('settings')
+                        .documentId('settings')
                 ),
             ...S.documentTypeListItems().filter(
-                (listItem: any) => !['siteSettings'].includes(listItem.getId())
+                (listItem: any) =>
+                    ![
+                        'settings',
+                    ].includes(listItem.getId())
             ),
         ])
