@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["**/*.ts", "**/*.tsx", "components/MyCustomStringInput.tsx", "deleteDocsByFilter.js"],
+  "include": ["**/*.ts", "**/*.tsx", "components/MyCustomStringInput.tsx", "queries/deleteDocsByFilter.js"],
   "exclude": ["node_modules"]
 }
