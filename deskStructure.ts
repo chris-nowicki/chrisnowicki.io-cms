@@ -1,9 +1,12 @@
+import { CogIcon } from "@sanity/icons";
+
 export const myStructure = (S: any) =>
     S.list()
-        .title('Data')
+        .title('Content')
         .items([
             S.listItem()
                 .title('Settings')
+                .icon(CogIcon)
                 .child(
                     S.document()
                         .schemaType('settings')

@@ -1,7 +1,10 @@
+import { TagIcon } from "@sanity/icons"
+
 export default {
     name: 'tech',
     type: 'document',
     title: 'Tech',
+    icon: TagIcon,
     fields: [
         {
             name: 'name',
